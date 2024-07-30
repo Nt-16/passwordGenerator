@@ -37,6 +37,11 @@ p{
 
 }
 
+.toggle-switch{
+    position:relative;
+    display: inline-block;
+    width: 80%;
+}
 .toggle-switch-lable{
     display:block;
     cursor: pointer;
@@ -45,4 +50,8 @@ p{
     width: 70px;
     height: 25px;
     background-color: #ccc;
+}
+
+.slider{
+    color: black;
 }
