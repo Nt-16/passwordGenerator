@@ -1,108 +1,183 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Quicksand&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    /* background-color: black; */
-    color: white;
-}
-
-p{
-    font-weight: 200;
-    font-size: medium;
-}
 
 
-/* Image */
-
-.image{
-    height: 50px;
-    width: 100px;
-    box-sizing: content-box;
-    background-color: balck;
-    border-radius: 50%;   
-}
-.icon{
+body{
+    background-color: #319795;
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 2rem;
-    cursor: default;
 }
 
-.btn{
-    background-color: black;
-    border-radius: 2rem;
-    border: rgb(163,163,163) 0.1rem solid;
+h2{
+    font-weight: 600;
 }
-.btn:hover{
-    background-color: red;
-    transition: 0.3s ease-in-out;
-}
-.password-space{
-    display: flex;
-    margin:0;
-    gap: 0.5rem;
 
-}
-.upper-container{
-    display: flex;
-    flex-direction: column;
-}
-.main-container{
-    display: flex;
-    flex-direction: column;
-    margin: 15rem;
+.gif{
+    position: relative;
     align-items: center;
+    background-color: white;
+    margin-top: 1rem;
+    /* transform: scale(0.5) ; */
     
-    border: rgb(163,163,163) 0.1rem solid;
-    border-radius: 1.5rem;
 }
 
 .title{
-    font-size: 25px;
-    font-weight: 600;
+    text-align: center;
+    margin:0;
+    
+}
+.tittle_p1{
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.password-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: black;
-}
-.title_p1{
-    margin-top: 0.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    background-color: whitesmoke;
+    margin: 100px;
+    
+    border-radius: 2rem;
+    border: black .1rem solid;
 }
 
-.pass-space{
-    height: 2.6rem;
-    width: 100%;
-    background-color: aqua;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-radius: 1.5rem;
+.password-container{
+    display: flex;
+    gap: 1rem;
+    
 
 }
-
-.detail-container{
-    margin-top: 2rem;;
-
+.password-space{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    border: black 0.1rem solid;
+    border-radius: 1rem;
 }
-.toggle-switch{
-    position:relative;
-    display: inline-block;
-    width: 80%;
-}
-.toggle-switch-lable{
-    display:block;
-    cursor: pointer;
-    border-radius: 30px;
-    position:relative;
-    width: 70px;
+.field-box{
     height: 25px;
-    background-color: #ccc;
+    border:none;
+    outline: none;
+    width: 100%;
+    padding: 11px 12px;
+    font-weight: 600;
+}
+
+.refresh-icon{
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+/* copy button */
+.btn{
+    display: flex;
+    background-color: #319795;
+    align-items: center;
+    border: none;
+    padding: 1px 10px;
+    width: 80px;
+    border-radius: .3rem;
+    transition: blue 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover{
+    background-color: red;
+}
+.copy-btn:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Darker background color when button is clicked */
+    transform: scale(0.98); /* Slightly scale down the button on click */
+  }
+.copy-btn{
+    background-color: transparent;
+    margin-right: 7px;
+    padding: 0;
+    height: 27px;
+    width: 27px;
+    display: block;
+    
+    
+   
+    
 }
 
 .slider{
-    color: black;
+    
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    width: 100%;
+    
+}
+.range{
+    width: 500px;
+    height: 4px;
+    background: white;
+    background-color: #319795;
+    appearance: none;
+    border: black 0.1rem solid;
+    border-radius: 2rem;
+    
+    
+    
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+    
+    width:23px;
+    height: 23px;
+    background: #319795;
+    border:black 0.1rem solid;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 1;
+    top: 2px;
+    outline: none;
+    
+    
+}
+#label-title{
+    align-items: start;
+    text-align: start;
+}
+.slider-track{
+    
+    width:fit-content;
+    margin-top: 1px;
+    position: relative;
+    outline: none;
+    height: 8px;
+    border-radius: 1rem;
+    
+    box-sizing: border-box;
+
+    
+}
+.details-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: start;
+    
+}
+
+.checkbox-wrapper{
+    display: flex;
+    margin: .4rem;
+    align-items: center;
+    justify-content:space-between;
+    
+
 }
