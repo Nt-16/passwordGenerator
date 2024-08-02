@@ -5,68 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
   <div class="password-wrapper">
     <div class="gif">
-      <img src="/assets/lock.gif" alt="lock gif" height="250px" weight="250px">
+      <img src="/assets/lock.gif" alt="lock gif" height="250px" width="250px">
     </div>
 
     <div class="title">
       <h2>Password Generator</h2>
-      <p class="tittle_p1"> Create strong and secure passwords to ensure online account safety</p>
+      <p class="title_p1">Create strong and secure passwords to ensure online account safety</p>
     </div>
     <div class="password-container">
       <div class="password-space">
-        <input class="field-box" type="text" value="" placeholder="Password" >
+        <input name="field-box" class="field-box" id="field-box" type="text" value="" placeholder="Password" min="0" max="20">
         <img src="/assets/refresh.png" alt="refresh icon" class="refresh-icon">
-        
       </div>
 
       <button class="btn"> 
-        <img src="/assets/copyIcon.png" alt="copy icon" class="copy-btn"> Copy
+        <img src="/assets/copyIcon.png" alt="copy icon" class="copy-btn">
       </button>
     </div>
 
     <div class="slider">
-
-      <label id="label-title">Password Length: <span>10</span> </label>
+      <label for="length-range">Password Length: <span id="length-display"> 10</span></label>
       <div class="slider-track">
-        <input type="range"  id="" value="" min="0" max="20" class="range">
+        <input type="range" id="length-range" value="10" min="1" max="20" class="range">
       </div>
-
-
-
     </div>
-    
 
     <div class="details-container">
       <div class="checkbox-wrapper">
+        <input type="checkbox" id="special-characters" class="special-characters">
         <label for="special-characters">Include Special Characters</label>
-        <input type="checkbox" class="special-characters">
-      </div>    
+      </div>
       <div class="checkbox-wrapper">
+        <input type="checkbox" id="numbers" class="numbers">
         <label for="numbers">Include Numbers</label>
-        <input type="checkbox" class="numbers">
-      </div>    
+      </div>
       <div class="checkbox-wrapper">
-        <label for="Uppercase">Include Uppercase</label>
-        <input type="checkbox" class="Uppercase" >
-      </div>    
+        <input type="checkbox" id="uppercase" class="uppercase">
+        <label for="uppercase">Include Uppercase</label>
+      </div>
       <div class="checkbox-wrapper">
-        <label for="lowercase" >Include lowercase</label>
-        <input type="checkbox" class="lowercase" checked>
-      </div>    
-  
-
+        <input type="checkbox" id="lowercase" class="lowercase" checked>
+        <label for="lowercase">Include Lowercase</label>
+      </div>
     </div>
-
   </div>
-
-
-
 
   <script src="script.js"></script>
 </body>

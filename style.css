@@ -33,11 +33,11 @@ h2{
     margin:0;
     
 }
-.tittle_p1{
+.title_p1{
     font-weight: 400;
     font-size: 17px;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left:25px;
+    margin-right:25px;
 }
 
 .password-wrapper{
@@ -50,6 +50,7 @@ h2{
     z-index: 1;
     border-radius: 2rem;
     border: black .1rem solid;
+    box-shadow: 0 4px 8px rgba(83, 161, 81, 0.39);
 }
 
 .password-container{
@@ -75,6 +76,7 @@ h2{
     width: 250px;
     padding: 11px 12px;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .refresh-icon{
@@ -85,17 +87,18 @@ h2{
 /* copy button */
 .btn{
     display: flex;
+    
     background-color: #319795;
     align-items: center;
     border: none;
     padding: 1px 10px;
-    width: 80px;
+    width: fit-content;
     border-radius: .3rem;
     transition: blue 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover{
-    background-color: red;
+    background-color: black;
 }
 .copy-btn:active {
     background-color: rgba(0, 0, 0, 0.2); /* Darker background color when button is clicked */
@@ -170,13 +173,14 @@ h2{
     
 }
 .details-container{
+    position:relative;
     margin-top: 2rem;
     margin-bottom: 2.2rem;
     display: flex;
     flex-direction: column;
     width:100%;
     align-items: start;
-    padding-left: 22%;
+    padding-left: 10%;
     
 }
 
@@ -192,6 +196,6 @@ h2{
     position: absolute;
     width: 20px; 
     height: 20px;
-    margin-left: 35%;
+    margin-left: 75%;
     
 }
