@@ -22,10 +22,14 @@ h2{
 .gif{
     position: relative;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
     margin-top: 1rem;
     /* transform: scale(0.5) ; */
     
+}
+
+#logo{
+    background-blend-mode: color-dodge;
 }
 
 .title{
